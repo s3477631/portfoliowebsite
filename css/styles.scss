@@ -10,5 +10,12 @@ div {
         height: 20rem;
         width: 20rem;
         padding: 2rem;
+
+        &:hover {
+            height: 22rem;
+            width: 22rem;
+            padding: 1rem;
+            cursor: pointer;
+        }
     }
 }
