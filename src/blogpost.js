@@ -26,7 +26,7 @@ console.log(titletext)
     blogtext[0].style.visibility = "visible";
     intitletext[0].style.visibility = "visible";
     titletext[0].style.color = "red";
-    titletext[0].style.visibility = "hidden";
-    contclicked.scrollIntoView({block: "start"});
+    titletext[0].style.visibility = "hidden";       
+    contclicked.scrollIntoView({block: "start", behavior: "smooth"});
   }
 }
