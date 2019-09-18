@@ -10,7 +10,7 @@ console.log(titletext)
   if(contclicked.style.height == "100vh"){
     contclicked.style.height = "20vh";
     contclicked.style.background = "#bbb";
-    image[0].style.width = "5rem";
+    image[0].style.width = "10rem";
     blogtext[0].style.visibility = "hidden";
     titletext[0].style.visibility = "visible";
     intitletext[0].style.visibility = "hidden";

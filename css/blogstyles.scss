@@ -1,14 +1,32 @@
+
+nav { 
+    a {
+        color: white; 
+        text-decoration: none; 
+        font-size: 2rem; 
+        
+    }
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: red;
+}
+
+
+
 div {
     ul {
         li {
             div{
                 img {
                     height: 100%;
-                    width: 5rem;
+                    width: 10rem;
+                    margin-right: 10rem; 
                 }
                 div {
                         color: green;
                         font-size: 2rem; 
+                        align-items: center;
 
                 }
                 background-color: #bbb;

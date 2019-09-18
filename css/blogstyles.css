@@ -1,3 +1,20 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: red;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
 div ul {
   padding: 0;
 }
@@ -18,11 +35,15 @@ div ul li div {
 
 div ul li div img {
   height: 100%;
-  width: 5rem;
+  width: 10rem;
+  margin-right: 10rem;
 }
 
 div ul li div div {
   color: green;
   font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=blogstyles.css.map */
