@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gamestyles.css">
     <script src="node_modules/traceur/bin/traceur.js"></script>
     <script src="node_modules/es6-module-loader/dist/es6-module-loader-dev.js"></script> 
     <script src="src/routes.js"></script>
@@ -16,7 +16,16 @@
         System.import('src/app.js') 
     </script>
 <noscript>Your browser does not support JavaScript!</noscript>
+    
+<div> 
+    <nav>
+        <a href="./index.html" alt="go back to home page">Home Page</a>
+        <a href="./gamepage.html" alt="go back to home page">Game</a>
+        <a href="./ruokapp.html" alt="go back to home page">RUOK</a>
+        <a href="./aboutme.html" alt="go back to home page">About Me</a>
+    </nav>
     <canvas id="gamecanvas" alt="demonic red cityscape where sloth is required to fight llama"  style="border: 1px solid black; height: 600; width: 900; z-index: 1;"></canvas>
+</div>
 
 <!--   
      <img src="assets/redbuilding.png" id="redbuilding" alt="Red Building">

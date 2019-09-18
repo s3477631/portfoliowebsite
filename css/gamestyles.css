@@ -1,0 +1,23 @@
+div canvas {
+  height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: red;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=gamestyles.css.map */

@@ -1,0 +1,14 @@
+
+nav { 
+    a {
+        color: white; 
+        text-decoration: none; 
+        font-size: 2rem; 
+        
+    }
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%; 
+    justify-content: space-around;
+    background-color: red;
+}
