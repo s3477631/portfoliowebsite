@@ -1,20 +1,32 @@
 function expander(id){
   var contclicked = document.getElementById(id)
-  var hidetext = contclicked.getElementsByTagName("p");
-//    contclicked.style.display = "block"
-   // hidetext[0].style.visibility = "visible"
-    // console.log()
-//    var childelems = contclicked.getElementById("hey");
-  if(contclicked.style.height == "80vh"){
-    contclicked.style.height = "10vh";
+  var blogtext = contclicked.getElementsByTagName("p");
+  var titletext = contclicked.getElementsByTagName("div");
+  var intitletext = contclicked.getElementsByTagName("h2");
+  var image = contclicked.getElementsByTagName("img");
+
+//    updates after click
+console.log(titletext)
+  if(contclicked.style.height == "100vh"){
+    contclicked.style.height = "20vh";
     contclicked.style.background = "#bbb";
-    hidetext[0].style.visibility = "hidden"
-    
+    image[0].style.width = "5rem";
+    blogtext[0].style.visibility = "hidden";
+    titletext[0].style.visibility = "visible";
+    intitletext[0].style.visibility = "hidden";
+    titletext[0].style.color = "green";
   }
+
+//   updates onclick
   else {
     // console.log(childelems)
-    contclicked.style.height = "80vh";
+    contclicked.style.height = "100vh";
     contclicked.style.background = "blue";
-    hidetext[0].style.visibility = "visible"
+    image[0].style.width = "25vw";
+    blogtext[0].style.visibility = "visible";
+    intitletext[0].style.visibility = "visible";
+    titletext[0].style.color = "red";
+    titletext[0].style.visibility = "hidden";
+    contclicked.scrollIntoView({block: "start"});
   }
 }

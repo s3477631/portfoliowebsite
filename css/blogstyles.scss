@@ -4,23 +4,22 @@ div {
             div{
                 img {
                     height: 100%;
-                    width: 4rem;
+                    width: 5rem;
                 }
-                span {
-
-                        color: green; 
-                        font-size: 3rem;
+                div {
+                        color: green;
+                        font-size: 2rem; 
 
                 }
                 background-color: #bbb;
-                border: 1px solid black; 
-                height: 10vh;
+                // border-bottom: 1px solid black; 
                 display: flex;
-                text-align: center;
+                height: 20vh;
+                // text-align: center;
             }
             list-style: none;
             width: 100%; 
-     
+            border: 1px solid black; 
         }
         padding: 0;
     }
