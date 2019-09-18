@@ -10,3 +10,7 @@ function ruokapp(){
 function startpage(){
     return  window.location.href='./index.html'
 }
+
+function blogpost(){
+    return window.location.href='./blogpost.html'
+}

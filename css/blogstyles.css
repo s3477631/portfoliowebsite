@@ -1,0 +1,14 @@
+div ul li {
+  list-style: none;
+}
+
+div ul li div {
+  background-color: #bbb;
+  border: 1px solid black;
+}
+
+div ul li div img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+/*# sourceMappingURL=blogstyles.css.map */
