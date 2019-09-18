@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog Posts</title>
     <link rel="stylesheet" href="css/blogstyles.css">
+    <script src="src/routes.js"></script>
+    <script src="src/blogpost.js"></script>
 </head>
 <body>
     <h1 alt="Devin's blog posts">Devin's Blog</h1>
@@ -19,13 +21,14 @@
     <div> 
         <ul>
             <li>
-                <div> 
+                <div onclick="expander(id)" id="first_post"> 
                     <img src="../assets/vuecalculator.jpg"/>
-                    <span>Vuejs & Review of latest vuetify</span>
+                    <span>Vuejs & Review of Latest Vuetify</span>
+                    <p style="visibility: hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum cumque nam dicta, fugiat minus optio molestiae necessitatibus veniam at unde, temporibus, laborum quod laudantium perspiciatis obcaecati consequatur maiores eos culpa?</p>
                 </div>
             </li>
             <li>
-                <div> 
+                <div onclick="expander(id)" id="second_post"> 
                     <img src="../assets/blogpost1.jpg"/>
                     <span>Level One Vuejs</span>
                 </div>

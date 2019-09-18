@@ -1,14 +1,29 @@
+div ul {
+  padding: 0;
+}
+
 div ul li {
   list-style: none;
+  width: 100%;
 }
 
 div ul li div {
   background-color: #bbb;
   border: 1px solid black;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
 }
 
 div ul li div img {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 100%;
+  width: 4rem;
+}
+
+div ul li div span {
+  color: green;
+  font-size: 3rem;
 }
 /*# sourceMappingURL=blogstyles.css.map */
