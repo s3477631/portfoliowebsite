@@ -19,9 +19,23 @@ var backgroundImage = new Image();
 backgroundImage.onload = function () {  
 layer0.drawImage(backgroundImage, 0, 0, 900, 600);
 buildings.draw(ctx, skyscrapers);
+
 };
 backgroundImage.src = "../assets/backgroundgame.jpg";
+// function loaded() {
+//   // woo yey image loaded
+// }
 
+// if (img1.complete) {
+//   loaded();
+// }
+// else {
+//   ck.addEventListener('load', loaded);
+// }
+
+// img1.addEventListener('error', function() {
+//   // argh everything's broken
+// });
 
 
 
