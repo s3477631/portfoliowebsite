@@ -15,4 +15,15 @@ div img:hover {
   transition: 2s;
 }
 
+@media (max-width: 480px) {
+  div {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  div img {
+    height: 100vh;
+    width: 95vw;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
