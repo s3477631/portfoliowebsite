@@ -6,27 +6,27 @@ div {
 }
 div div {
   position: relative;
+  object-fit: contain;
 }
 div div img {
-  height: 50vh;
-  width: 50vw;
   transition-duration: 200ms;
   border: 0.5rem dashed white;
   z-index: 1;
+  height: 50vh;
+  width: 50vw;
 }
 div div div {
   position: absolute;
-  top: 35vh;
+  top: 30vh;
   opacity: 0.75;
   background: #353535;
-  width: 50vw;
-  height: 10rem;
+  height: 8rem;
   z-index: 100;
 }
 div div div span {
-  text-align: right;
+  text-align: center;
   opacity: 1;
-  font-size: 10rem;
+  font-size: 7rem;
   color: white;
   font-weight: bold;
 }
@@ -49,7 +49,7 @@ div div:hover {
     height: 98vh;
   }
   div div div {
-    top: 60vh;
+    top: 80vh;
   }
   div div div span {
     font-size: 3.5rem;

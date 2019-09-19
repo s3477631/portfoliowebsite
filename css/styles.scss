@@ -1,24 +1,23 @@
 div {
     div{
         img {
-            height: 50vh; 
-            width: 50vw;
             transition-duration: 200ms;
             border: 0.5rem dashed white;
             z-index: 1; 
+            height: 50vh;
+            width: 50vw;
         }
         div {
             position: absolute; 
-            top: 35vh;
+            top: 30vh;
             opacity: 0.75;
             background: rgb(53, 53, 53); 
-            width: 50vw;
-            height: 10rem; 
+            height: 8rem; 
             z-index: 100; 
             span {
-                text-align: right;
+                text-align: center;
                 opacity: 1;
-                font-size: 10rem; 
+                font-size: 7rem; 
                 color: rgb(255, 255, 255);
                 font-weight: bold;
             }
@@ -28,9 +27,11 @@ div {
             transform: rotate(360deg);
             transition: 1s;
         }
-   
         position: relative;
+        object-fit: contain;
+
     }
+
     display: grid;
     grid-template-areas: 'about alphproj' 
                          'betaproj blog';
@@ -48,7 +49,7 @@ div {
                  span {
                      font-size: 3.5rem;
                  }
-                  top: 60vh;
+                  top: 80vh;
              }
     
              width: 100vw;
