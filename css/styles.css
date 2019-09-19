@@ -1,11 +1,12 @@
 div {
+  -o-object-fit: contain;
+     object-fit: contain;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50vw 50vw;
       grid-template-columns: 50vw 50vw;
-  -ms-grid-rows: 50vh 50vh;
-      grid-template-rows: 50vh 50vh;
-  overflow: hidden;
+  -ms-grid-rows: 49.5vh 49.5vh;
+      grid-template-rows: 49.5vh 49.5vh;
   background-color: rgba(219, 37, 255, 0.452);
 }
 
@@ -17,17 +18,15 @@ div div img {
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
   border: 0.5rem dashed white;
-  z-index: 1;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  height: 100%;
-  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 99%;
+  width: 99%;
 }
 
 div div div {
   position: absolute;
-  top: 45vh;
+  top: 40vh;
   opacity: 0.75;
   background: #353535;
   height: 8rem;

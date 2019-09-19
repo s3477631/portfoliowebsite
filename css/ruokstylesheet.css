@@ -23,10 +23,8 @@ body main {
 body main div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100vw;
-      grid-template-columns: 100vw;
-  -ms-grid-rows: 40vh 10vh 40vh 10vh;
-      grid-template-rows: 40vh 10vh 40vh 10vh;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
   overflow: hidden;
 }
 

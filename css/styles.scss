@@ -3,14 +3,16 @@ div {
         img {
             transition-duration: 200ms;
             border: 0.5rem dashed white;
-            z-index: 1; 
-            align-self: center;
-            height: 100%;
-            width: 100%;
+            // align-self: center;
+            object-fit: fill;
+            height: 99%; 
+            width: 99%;
+            // height: 100%;
+            // width: 100%;
         }
         div {
             position: absolute; 
-            top: 45vh;
+            top: 40vh;
             opacity: 0.75;
             background: rgb(53, 53, 53); 
             height: 8rem; 
@@ -23,8 +25,7 @@ div {
                 font-size: 6rem; 
                 color: rgb(255, 255, 255);
                 font-weight: bold;
-            }
-            
+            }        
         }
         &:hover {
             cursor: pointer;
@@ -33,11 +34,10 @@ div {
         }
         position: relative;
     }
-    
+    object-fit: contain;
     display:grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 50vh 50vh;
-    overflow: hidden;
+    grid-template-rows: 49.5vh 49.5vh;
     background-color: rgba(219, 37, 255, 0.452); 
 }
   @media (max-width: 480px) {
