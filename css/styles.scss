@@ -1,11 +1,6 @@
 div {
     div{
         img {
-            &:hover {
-                cursor: pointer;
-                transform: rotate(90deg);
-                transition: 2s;
-            }
             height: 50vh; 
             width: 50vw;
             transition-duration: 200ms;
@@ -23,10 +18,15 @@ div {
             span {
                 text-align: right;
                 opacity: 1;
-                font-size: 4rem; 
+                font-size: 10rem; 
                 color: rgb(255, 255, 255);
                 font-weight: bold;
             }
+        }
+        &:hover {
+            cursor: pointer;
+            transform: rotate(360deg);
+            transition: 1s;
         }
    
         position: relative;
@@ -36,9 +36,7 @@ div {
                          'betaproj blog';
     overflow: hidden;
     background-color: rgba(219, 37, 255, 0.452); 
-
 }
-
   @media (max-width: 480px) {
       div {
           div{

@@ -14,11 +14,6 @@ div div img {
   border: 0.5rem dashed white;
   z-index: 1;
 }
-div div img:hover {
-  cursor: pointer;
-  transform: rotate(90deg);
-  transition: 2s;
-}
 div div div {
   position: absolute;
   top: 35vh;
@@ -31,9 +26,14 @@ div div div {
 div div div span {
   text-align: right;
   opacity: 1;
-  font-size: 4rem;
+  font-size: 10rem;
   color: white;
   font-weight: bold;
+}
+div div:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: 1s;
 }
 
 @media (max-width: 480px) {
