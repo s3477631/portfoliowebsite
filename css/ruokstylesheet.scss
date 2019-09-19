@@ -1,0 +1,22 @@
+@import "navstyle";
+body {
+    main {
+       img {
+        height: 20vh;
+        justify-self: center;
+       }
+       h2{
+           justify-self: center;
+       }
+       input{
+         text-align: center;
+       }
+       display: grid; 
+       grid-template-areas: 'header'
+                            'nav'
+                            'h2'
+                            'input'
+    }
+    background-color: #FEC831; 
+}
+

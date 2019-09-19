@@ -9,15 +9,16 @@ div {
         }
         div {
             position: absolute; 
-            top: 30vh;
+            top: 45vh;
             opacity: 0.75;
             background: rgb(53, 53, 53); 
             height: 8rem; 
+            width: 100%;
             z-index: 100; 
             span {
                 text-align: center;
                 opacity: 1;
-                font-size: 7rem; 
+                font-size: 6rem; 
                 color: rgb(255, 255, 255);
                 font-weight: bold;
             }

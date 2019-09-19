@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Game</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- <script src="node_modules/traceur/bin/traceur.js"></script>
     <script src="node_modules/es6-module-loader/dist/es6-module-loader-dev.js"></script>  -->
     <script src="src/routes.js"></script>
-</head>
-<body>
-  
-<noscript>Your browser does not support JavaScript!</noscript>
- <main>
+  </head>
+  <body>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <main>
+      <div>
         <div>
-                <div> 
-                    <img alt="Edited image of Devin. It is slightly pixelated" onclick="aboutme()" src="./assets/DevImage.gif"/>
-                    <div><span>About me</span></div>
-                </div>
-                <div>   
-                    <img alt="project one is currently a game written in es6" onclick="gamepage()" src="./assets/gamescreenshot.png"/>
-                    <div><span>Project #1</span></div>
-                </div>
-                <div>   
-                    <img alt="project two is an ruok app utilising html5 canvas and camera access" onclick="ruok()" src="./assets/ruoklg.png"/>
-                    <div><span>Project #2</span></div>
-                </div>
-                <div>   
-                    <img alt="blog link image of laptop and sign with you got this" onclick="blogpost()" src="./assets/blogpost.jpg"/>
-                    <div><span>Blog</span></div>
-                </div>
-            </div>
-
- </main>
-
-
-</body>
+          <img
+            alt="project one is currently a game written in es6"
+            onclick="workingprojects()"
+            src="./assets/ruoklg.png"
+          />
+          <div><span>Working Project</span></div>
+        </div>
+        <div>
+          <img
+            alt="Edited image of Devin. It is slightly pixelated"
+            onclick="aboutme()"
+            src="./assets/DevImage.gif"
+          />
+          <div><span>About me</span></div>
+        </div>
+        <div>
+          <img
+            alt="Completed vuejs/javascript project"
+            onclick="completedprojects()"
+            src="./assets/completedproj.png"
+          />
+          <div><span>Completed Commercial Project</span></div>
+        </div>
+        <div>
+          <img
+            alt="blog link image of laptop and sign with you got this"
+            onclick="blogpost()"
+            src="./assets/blogpost.jpg"
+          />
+          <div><span>Blog</span></div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

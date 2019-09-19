@@ -1,0 +1,43 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: red;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+body {
+  background-color: #FEC831;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'header' 'nav' 'h2' 'input';
+}
+
+body main img {
+  height: 20vh;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main h2 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main input {
+  text-align: center;
+}
+/*# sourceMappingURL=ruokstylesheet.css.map */
