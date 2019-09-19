@@ -1,8 +1,8 @@
 @import "navstyle";
 body {
     main {
+    div {
        img {
-        height: 20vh;
         justify-self: center;
        }
        h2{
@@ -11,6 +11,7 @@ body {
        input{
          text-align: center;
        }
+      
        display: grid; 
        grid-template-areas: 'header'
                             'nav'
@@ -18,5 +19,7 @@ body {
                             'input'
     }
     background-color: #FEC831; 
+}
+    
 }
 

@@ -16,28 +16,27 @@ nav a {
   font-size: 2rem;
 }
 
-body {
+body main {
   background-color: #FEC831;
 }
 
-body main {
+body main div {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'header' 'nav' 'h2' 'input';
 }
 
-body main img {
-  height: 20vh;
+body main div img {
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-body main h2 {
+body main div h2 {
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-body main input {
+body main div input {
   text-align: center;
 }
 /*# sourceMappingURL=ruokstylesheet.css.map */
