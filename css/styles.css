@@ -46,9 +46,13 @@ div div div span {
   }
   div div img {
     width: 100vw;
+    height: 98vh;
+  }
+  div div div {
+    top: 60vh;
   }
   div div div span {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 
