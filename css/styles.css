@@ -22,8 +22,8 @@ div div img:hover {
 div div div {
   position: absolute;
   top: 35vh;
-  opacity: 0.6;
-  background: #615e5e;
+  opacity: 0.75;
+  background: #353535;
   width: 50vw;
   height: 30%;
   z-index: 100;
@@ -34,6 +34,21 @@ div div div span {
   opacity: 1;
   font-size: 15rem;
   color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  div div {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100vw;
+  }
+  div div img {
+    width: 100vw;
+  }
+  div div div span {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

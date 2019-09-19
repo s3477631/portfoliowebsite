@@ -15,8 +15,8 @@ div {
         div {
             position: absolute; 
             top: 35vh;
-            opacity: 0.6;
-            background: rgb(97, 94, 94); 
+            opacity: 0.75;
+            background: rgb(53, 53, 53); 
             width: 50vw;
             height: 30%; 
             z-index: 100; 
@@ -25,7 +25,8 @@ div {
             span {
                 opacity: 1;
                 font-size: 15rem; 
-                color: white;
+                color: rgb(255, 255, 255);
+                font-weight: bold;
             }
         }
    
@@ -38,16 +39,23 @@ div {
 
 }
 
-// @media (max-width: 480px) {
-//     div {
-//         img{
-//             width: 100vw;
-//         }
-//         display: grid;
-//         grid-template-columns: auto;
-//         width: 100vw;
-//     }
-//   }
+ @media (max-width: 480px) {
+     div {
+         div{
+            img{
+                width: 100vw;
+            }
+            div{
+                span {
+                    font-size: 2rem;
+                }
+            }
+            display: grid;
+            grid-template-columns: auto;
+            width: 100vw;
+        }
+    }
+   }
 
 
 
