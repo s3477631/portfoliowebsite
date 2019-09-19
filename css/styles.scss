@@ -4,8 +4,9 @@ div {
             transition-duration: 200ms;
             border: 0.5rem dashed white;
             z-index: 1; 
-            height: 50vh;
-            width: 50vw;
+            align-self: center;
+            height: 100%;
+            width: 100%;
         }
         div {
             position: absolute; 
@@ -15,6 +16,7 @@ div {
             height: 8rem; 
             width: 100%;
             z-index: 100; 
+            
             span {
                 text-align: center;
                 opacity: 1;
@@ -22,6 +24,7 @@ div {
                 color: rgb(255, 255, 255);
                 font-weight: bold;
             }
+            
         }
         &:hover {
             cursor: pointer;
@@ -29,13 +32,11 @@ div {
             transition: 1s;
         }
         position: relative;
-        object-fit: contain;
-
     }
-
-    display: grid;
-    grid-template-areas: 'about alphproj' 
-                         'betaproj blog';
+    
+    display:grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 50vh 50vh;
     overflow: hidden;
     background-color: rgba(219, 37, 255, 0.452); 
 }
@@ -55,11 +56,10 @@ div {
     
              width: 100vw;
          }
-         display: grid;
-         grid-template-areas: 'about'   
-                              'alphaproj'
-                              'betaproj'
-                              'blog';
+         display:grid;
+         grid-template-columns: 100vw;
+         grid-template-rows: 100vh;
+         overflow: hidden;
      }
     }
 

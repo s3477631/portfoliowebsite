@@ -1,15 +1,16 @@
 div {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'about alphproj'  'betaproj blog';
+  -ms-grid-columns: 50vw 50vw;
+      grid-template-columns: 50vw 50vw;
+  -ms-grid-rows: 50vh 50vh;
+      grid-template-rows: 50vh 50vh;
   overflow: hidden;
   background-color: rgba(219, 37, 255, 0.452);
 }
 
 div div {
   position: relative;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 div div img {
@@ -17,8 +18,11 @@ div div img {
           transition-duration: 200ms;
   border: 0.5rem dashed white;
   z-index: 1;
-  height: 50vh;
-  width: 50vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 100%;
+  width: 100%;
 }
 
 div div div {
@@ -51,7 +55,11 @@ div div:hover {
   div {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: 'about'    'alphaproj' 'betaproj' 'blog';
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    -ms-grid-rows: 100vh;
+        grid-template-rows: 100vh;
+    overflow: hidden;
   }
   div div {
     width: 100vw;

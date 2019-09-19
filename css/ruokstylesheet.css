@@ -13,7 +13,7 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 10rem;
 }
 
 body main {
@@ -23,20 +23,27 @@ body main {
 body main div {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'header' 'nav' 'h2' 'input';
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 40vh 10vh 40vh 10vh;
+      grid-template-rows: 40vh 10vh 40vh 10vh;
+  overflow: hidden;
 }
 
 body main div img {
   -ms-grid-column-align: center;
       justify-self: center;
+  height: 100%;
 }
 
 body main div h2 {
   -ms-grid-column-align: center;
       justify-self: center;
+  font-size: 12rem;
 }
 
 body main div input {
   text-align: center;
+  font-size: 8rem;
 }
 /*# sourceMappingURL=ruokstylesheet.css.map */

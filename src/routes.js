@@ -18,3 +18,7 @@ function blogpost(){
 function completedprojects(){
   return window.location.href='./completeproj.html'
 }
+
+function opencamera(){
+  return window.location.href='./ruokcamer.html'
+}

@@ -3,22 +3,27 @@ body {
     main {
     div {
        img {
-        justify-self: center;
+         justify-self: center;
+         height: 100%;
+   
        }
        h2{
-           justify-self: center;
+          justify-self: center;
+          font-size: 12rem;
        }
        input{
          text-align: center;
+         font-size: 8rem;
        }
-      
-       display: grid; 
-       grid-template-areas: 'header'
-                            'nav'
-                            'h2'
-                            'input'
+       display:grid;
+       grid-template-columns: 100vw;
+       grid-template-rows: 40vh 10vh 40vh 10vh;
+       overflow: hidden;
+   
     }
     background-color: #FEC831; 
+    
+
 }
     
 }
