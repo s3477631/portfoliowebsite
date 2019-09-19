@@ -1,29 +1,39 @@
 div {
   display: grid;
   grid-template-columns: auto auto;
+  overflow: hidden;
   background-color: rgba(219, 37, 255, 0.452);
 }
-div img {
-  height: 49vh;
-  width: 49vw;
+div div {
+  position: relative;
+}
+div div img {
+  height: 50vh;
+  width: 50vw;
   transition-duration: 200ms;
   border: 0.5rem dashed white;
+  z-index: 1;
 }
-div img:hover {
+div div img:hover {
   cursor: pointer;
   transform: rotate(90deg);
   transition: 2s;
 }
-
-@media (max-width: 480px) {
-  div {
-    display: grid;
-    grid-template-columns: auto;
-  }
-  div img {
-    height: 100vh;
-    width: 95vw;
-  }
+div div div {
+  position: absolute;
+  top: 35vh;
+  opacity: 0.6;
+  background: #615e5e;
+  width: 50vw;
+  height: 30%;
+  z-index: 100;
+  align-items: center;
+  text-align: center;
+}
+div div div span {
+  opacity: 1;
+  font-size: 15rem;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
