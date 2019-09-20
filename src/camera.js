@@ -48,21 +48,21 @@ window.addEventListener('devicemotion', function(event){
     
     if(movement > 3000){
     //   document.getElementById("indicator").innerText = 'back';
+   
         cameraoutput.src = imagescaptured[counter]
     document.getElementById('noimages').innerText = counter
-
-    if(counter < imagescaptured.length && counter > 0){
+    if(counter < imagescaptured.length && counter >= 0){
         counter++
         }
-
+   
     }
     else if (movement < -3000){
         cameraoutput.src = imagescaptured[counter]
     //   document.getElementById("indicator").innerText = 'forward'
-    if(counter < imagescaptured.length && counter > 0){
-        counter++
-        }
     document.getElementById('noimages').innerText = counter
+    if(counter < imagescaptured.length && counter >= 0){
+        counter--
+        }
     }
     else {
         // document.getElementById("indicator").innerText = 'stationary'
