@@ -29,7 +29,6 @@ const imageoutput = document.createElement("img");
 const cameraSensor = document.createElement("canvas")
         cameraSensor.setAttribute("id", "canvas");
 const imagescaptured = []
-var counter = 0;
 // const cameraSensor = document.querySelector("#camera--sensor")
 
 cameraTrigger.onclick = function() {
@@ -46,7 +45,7 @@ cameraTrigger.onclick = function() {
 window.addEventListener('devicemotion', function(event){
     var motioned = event.acceleration.z;
     var movement = Math.round(motioned * 1000);
-
+    var counter = 0;
     document.getElementById("rawdata").innerText = movement
     if(movement > 3000){
     //   document.getElementById("indicator").innerText = 'back';
