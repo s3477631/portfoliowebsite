@@ -55,5 +55,8 @@ window.addEventListener('devicemotion', function(event){
     else if (movement < -3000){
       document.getElementById("indicator").innerText = 'forward'
     }
+    else {
+        document.getElementById("indicator").innerText = 'stationary'
+    }
   
   });
