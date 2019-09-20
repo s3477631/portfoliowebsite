@@ -42,10 +42,10 @@ cameraTrigger.onclick = function() {
  showimage.onclick = function() {
      cameraoutput.src = imagescaptured[0]
  }
+ var counter = 0;
 window.addEventListener('devicemotion', function(event){
     var motioned = event.acceleration.z;
     var movement = Math.round(motioned * 1000);
-    var counter = 0;
     document.getElementById("rawdata").innerText = movement
     if(movement > 3000){
     //   document.getElementById("indicator").innerText = 'back';
