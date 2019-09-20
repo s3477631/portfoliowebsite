@@ -43,9 +43,7 @@ showimage.onclick = function() {
     cameraoutput.src = imagescaptured[0]
 }
 window.addEventListener('devicemotion', function(event){
-    var motioned = event.acceleration.z
-    var imageobj = document.getElementsByTagName("img")
-    document.getElementById("outputofEvent").innerText = imageobj
+    var motioned = event.acceleration.z;
     var movement = Math.round(motioned * 1000);
   
     if(movement > 3000){
