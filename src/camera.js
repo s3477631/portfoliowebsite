@@ -64,6 +64,10 @@ window.addEventListener('devicemotion', function(event){
     }
   
   });
+
+  function doSomething(scroll_pos){
+      console.log(scroll_pos)
+  }
   
 let ticking = false;
 window.addEventListener('scroll', function(e){

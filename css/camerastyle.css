@@ -2,11 +2,24 @@ body {
   background-color: #FEC831;
 }
 
-body main video {
-  position: absolute;
+body main div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 80vh 4vh 4vh 3vh 3vh 3vh 3vh;
+      grid-template-rows: 80vh 4vh 4vh 3vh 3vh 3vh 3vh;
 }
 
-body main img {
+body main div video {
+  position: absolute;
+  width: 100%;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+body main div img {
   position: relative;
+  width: 100%;
 }
 /*# sourceMappingURL=camerastyle.css.map */
