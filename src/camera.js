@@ -49,14 +49,15 @@ window.addEventListener('devicemotion', function(event){
     document.getElementById("rawdata").innerText = movement
     if(movement > 3000){
     //   document.getElementById("indicator").innerText = 'back';
-        this.cameraoutput.src = imagescaptured[counter]
+        cameraoutput.src = imagescaptured[counter]
         counter++
-        document.getElementById('imageindex').innerText = counter
+    document.getElementById('imageindex').innerText = counter
     }
     else if (movement < -3000){
-        this.cameraoutput.src = imagescaptured[counter]
+        cameraoutput.src = imagescaptured[counter]
     //   document.getElementById("indicator").innerText = 'forward'
             counter--
+    document.getElementById('imageindex').innerText = counter
     }
     else {
         // document.getElementById("indicator").innerText = 'stationary'
