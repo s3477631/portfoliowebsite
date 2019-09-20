@@ -15,6 +15,7 @@ body {
                     top: 5vh; 
                     left: 5vw; 
                     font-size: 3rem;
+                    z-index: 900;
                 }
                 button {
                  position: absolute; 
@@ -29,6 +30,7 @@ body {
                  opacity: 0.6;
                  text-align: center; 
                 }
+                margin: 0;
             }     
         }
     }

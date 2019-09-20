@@ -12,11 +12,16 @@ body main div img {
   position: relative;
 }
 
+body main div div {
+  margin: 0;
+}
+
 body main div div h1 {
   position: absolute;
   top: 5vh;
   left: 5vw;
   font-size: 3rem;
+  z-index: 900;
 }
 
 body main div div button {
