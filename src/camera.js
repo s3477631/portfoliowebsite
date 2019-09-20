@@ -50,13 +50,13 @@ window.addEventListener('devicemotion', function(event){
     if(movement > 3000){
     //   document.getElementById("indicator").innerText = 'back';
         cameraoutput.src = imagescaptured[counter]
-        counter++
+        counter--
     document.getElementById('imageindex').innerText = counter
     }
     else if (movement < -3000){
         cameraoutput.src = imagescaptured[counter]
     //   document.getElementById("indicator").innerText = 'forward'
-            counter--
+            counter++
     document.getElementById('imageindex').innerText = counter
     }
     else {
