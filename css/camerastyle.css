@@ -20,6 +20,7 @@ body main div div #noimages {
   position: absolute;
   top: 5vh;
   left: 5vw;
+  color: red;
   font-size: 3rem;
   z-index: 900;
 }
