@@ -29,6 +29,7 @@ const imageoutput = document.createElement("img");
 const cameraSensor = document.createElement("canvas")
         cameraSensor.setAttribute("id", "canvas");
 const imagescaptured = []
+var counter = 0;
 // const cameraSensor = document.querySelector("#camera--sensor")
 
 cameraTrigger.onclick = function() {
@@ -49,14 +50,33 @@ window.addEventListener('devicemotion', function(event){
     document.getElementById("rawdata").innerText = movement
   
     if(movement > 3000){
-      document.getElementById("indicator").innerText = 'back';
+    //   document.getElementById("indicator").innerText = 'back';
+    if(counter >= 0){
+        cameraoutput.src = imagescaptured[counter]
+        counter++
+          }
+        else{
+            cameraoutput.src = imagescaptured[counter]
+            counter--
+        }
+    cameraoutput.src = imagescaptured[counter]
+    counter++
       
     }
     else if (movement < -3000){
-      document.getElementById("indicator").innerText = 'forward'
+        cameraoutput.src = imagescaptured[counter]
+    //   document.getElementById("indicator").innerText = 'forward'
+        if(counter >= 0){
+        cameraoutput.src = imagescaptured[counter]
+        counter++
+          }
+        else{
+            cameraoutput.src = imagescaptured[counter]
+            counter--
+        }
     }
     else {
-        document.getElementById("indicator").innerText = 'stationary'
+        // document.getElementById("indicator").innerText = 'stationary'
     }
   
   });
