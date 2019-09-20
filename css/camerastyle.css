@@ -12,6 +12,10 @@ body main div img {
   position: relative;
 }
 
+body main div div h1 {
+  position: absolute;
+}
+
 body main div div button {
   position: absolute;
   top: 80vh;

@@ -24,7 +24,6 @@ navigator.mediaDevices.getUserMedia(constrainObj)
 const cameraTrigger = document.querySelector("#camera--trigger")
 const cameraView = document.querySelector("#camera--view")
 const cameraoutput = document.querySelector("#camera--output")
-const show = document.querySelector("#showimage")
 const imageoutput = document.createElement("img");
 const cameraSensor = document.createElement("canvas")
         cameraSensor.setAttribute("id", "canvas");
@@ -39,9 +38,9 @@ cameraTrigger.onclick = function() {
     console.log(imagescaptured)
 };
 
- showimage.onclick = function() {
-     cameraoutput.src = imagescaptured[0]
- }
+//  showimage.onclick = function() {
+//      cameraoutput.src = imagescaptured[0]
+//  }
  var counter = 0;
 window.addEventListener('devicemotion', function(event){
     var motioned = event.acceleration.z;
@@ -51,13 +50,13 @@ window.addEventListener('devicemotion', function(event){
     //   document.getElementById("indicator").innerText = 'back';
         cameraoutput.src = imagescaptured[counter]
         counter--
-    document.getElementById('imageindex').innerText = counter
+    document.getElementById('noimages').innerText = counter
     }
     else if (movement < -3000){
         cameraoutput.src = imagescaptured[counter]
     //   document.getElementById("indicator").innerText = 'forward'
             counter++
-    document.getElementById('imageindex').innerText = counter
+    document.getElementById('noimages').innerText = counter
     }
     else {
         // document.getElementById("indicator").innerText = 'stationary'
