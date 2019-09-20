@@ -45,17 +45,23 @@ cameraTrigger.onclick = function() {
 window.addEventListener('devicemotion', function(event){
     var motioned = event.acceleration.z;
     var movement = Math.round(motioned * 1000);
-    // document.getElementById("rawdata").innerText = movement
+    
     if(movement > 3000){
     //   document.getElementById("indicator").innerText = 'back';
         cameraoutput.src = imagescaptured[counter]
-        counter--
     document.getElementById('noimages').innerText = counter
+
+    if(counter < imagescaptured.length && counter > 0){
+        counter++
+        }
+
     }
     else if (movement < -3000){
         cameraoutput.src = imagescaptured[counter]
     //   document.getElementById("indicator").innerText = 'forward'
-            counter++
+    if(counter < imagescaptured.length && counter > 0){
+        counter++
+        }
     document.getElementById('noimages').innerText = counter
     }
     else {
