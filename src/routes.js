@@ -20,5 +20,5 @@ function completedprojects(){
 }
 
 function opencamera(){
-  return window.location.href='./ruokcamer.html'
+  return window.location.href='./ruokcamera.html'
 }
