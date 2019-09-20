@@ -42,4 +42,17 @@ cameraTrigger.onclick = function() {
 showimage.onclick = function() {
     cameraoutput.src = imagescaptured[0]
 }
+window.ondevicemotion = function(event) {
 
+    accX = Math.round(event.accelerationIncludingGravity.x*10) / 10;  
+    accY = Math.round(event.accelerationIncludingGravity.y*10) / 10;  
+		    
+    movement = 10;
+		    
+    xA = -(accX / 10) * movement;
+    yA = -(accY / 10) * movement;
+
+    document.getElementById("acceldata").innerText = yA
+    document.getElementById("yumdata").innerText = xA
+}
+		    
