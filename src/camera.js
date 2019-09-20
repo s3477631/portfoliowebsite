@@ -23,12 +23,23 @@ navigator.mediaDevices.getUserMedia(constrainObj)
 
 const cameraTrigger = document.querySelector("#camera--trigger")
 const cameraView = document.querySelector("#camera--view")
-const cameraOutput = document.querySelector("#camera--output")
-const cameraSensor = document.querySelector("#camera--sensor")
+const cameraoutput = document.querySelector("#camera--output")
+const show = document.querySelector("#showimage")
+const imageoutput = document.createElement("img");
+const cameraSensor = document.createElement("canvas")
+        cameraSensor.setAttribute("id", "canvas");
+const imagescaptured = []
+// const cameraSensor = document.querySelector("#camera--sensor")
 
 cameraTrigger.onclick = function() {
     cameraSensor.width = cameraView.videoWidth;
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
-    cameraOutput.src = cameraSensor.toDataURL("image/png");
+    imagescaptured.push(cameraSensor.toDataURL("image/webp"));
+    console.log(imagescaptured)
 };
+
+showimage.onclick = function() {
+    cameraoutput.src = imagescaptured[0]
+}
+

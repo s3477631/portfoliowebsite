@@ -1,4 +1,12 @@
 body {
   background-color: #FEC831;
 }
+
+body main video {
+  position: absolute;
+}
+
+body main img {
+  position: relative;
+}
 /*# sourceMappingURL=camerastyle.css.map */
