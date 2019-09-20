@@ -49,28 +49,14 @@ window.addEventListener('devicemotion', function(event){
     document.getElementById("rawdata").innerText = movement
     if(movement > 3000){
     //   document.getElementById("indicator").innerText = 'back';
-        if(counter == imagescaptured.length){
-            this.cameraoutput.src = imagescaptured[counter]
-            counter--
-        }     
-        else {
-            this.cameraoutput.src = imagescaptured[counter]
-            counter++
-        }
+        this.cameraoutput.src = imagescaptured[counter]
+        counter++
         document.getElementById('imageindex').innerText = counter
     }
     else if (movement < -3000){
-        cameraoutput.src = imagescaptured[counter]
+        this.cameraoutput.src = imagescaptured[counter]
     //   document.getElementById("indicator").innerText = 'forward'
-         if(counter == imagescaptured.length){
-            this.cameraoutput.src = imagescaptured[counter]
             counter--
-        }     
-        else {
-            this.cameraoutput.src = imagescaptured[counter]
-            counter++
-        }
-        document.getElementById('imageindex').innerText = counter
     }
     else {
         // document.getElementById("indicator").innerText = 'stationary'
