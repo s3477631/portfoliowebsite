@@ -42,17 +42,18 @@ cameraTrigger.onclick = function() {
 showimage.onclick = function() {
     cameraoutput.src = imagescaptured[0]
 }
-window.ondevicemotion = function(event) {
-
-    accX = Math.round(event.accelerationIncludingGravity.x*10) / 10;  
-    accY = Math.round(event.accelerationIncludingGravity.y*10) / 10;  
-		    
-    movement = 10;
-		    
-    xA = -(accX / 10) * movement;
-    yA = -(accY / 10) * movement;
-
-    document.getElementById("acceldata").innerText = yA
-    document.getElementById("yumdata").innerText = xA
-}
-		    
+window.addEventListener('devicemotion', function(event){
+    var motioned = event.acceleration.z
+    var imageobj = document.getElementsByTagName("img")
+    document.getElementById("outputofEvent").innerText = imageobj
+    var movement = Math.round(motioned * 1000);
+  
+    if(movement > 3000){
+      document.getElementById("indicator").innerText = 'back';
+      
+    }
+    else if (movement < -3000){
+      document.getElementById("indicator").innerText = 'forward'
+    }
+  
+  });
