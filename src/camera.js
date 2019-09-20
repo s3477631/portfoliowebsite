@@ -54,19 +54,24 @@ window.addEventListener('devicemotion', function(event){
     if(counter < imagescaptured.length && counter >= 0){
         counter++
         }
+        else {
+            counter = 0
+        }
    
     }
     else if (movement < -3000){
         cameraoutput.src = imagescaptured[counter]
     //   document.getElementById("indicator").innerText = 'forward'
     document.getElementById('noimages').innerText = counter
-    if(counter < imagescaptured.length && counter >= 0){
-        counter--
+        if(counter < imagescaptured.length && counter >= 0){
+        counter++
         }
+        else {
+            counter = 0
+        }
+
     }
-    else {
-        // document.getElementById("indicator").innerText = 'stationary'
-    }
+
   
   });
 
