@@ -40,39 +40,36 @@ cameraTrigger.onclick = function() {
     console.log(imagescaptured)
 };
 
-showimage.onclick = function() {
-    cameraoutput.src = imagescaptured[0]
-}
+// showimage.onclick = function() {
+//     cameraoutput.src = imagescaptured[0]
+// }
 window.addEventListener('devicemotion', function(event){
     var motioned = event.acceleration.z;
     var movement = Math.round(motioned * 1000);
 
     document.getElementById("rawdata").innerText = movement
-  
     if(movement > 3000){
     //   document.getElementById("indicator").innerText = 'back';
-    if(counter >= 0){
-        cameraoutput.src = imagescaptured[counter]
-        counter++
-          }
-        else{
+        if(counter == imagescaptured.length){
             cameraoutput.src = imagescaptured[counter]
             counter--
+        }     
+        else {
+            cameraoutput.src = imagescaptured[counter]
+            counter++
         }
-    cameraoutput.src = imagescaptured[counter]
-    counter++
-      
+
     }
     else if (movement < -3000){
         cameraoutput.src = imagescaptured[counter]
     //   document.getElementById("indicator").innerText = 'forward'
-        if(counter >= 0){
-        cameraoutput.src = imagescaptured[counter]
-        counter++
-          }
-        else{
+         if(counter == imagescaptured.length){
             cameraoutput.src = imagescaptured[counter]
             counter--
+        }     
+        else {
+            cameraoutput.src = imagescaptured[counter]
+            counter++
         }
     }
     else {
