@@ -57,7 +57,7 @@ window.addEventListener('devicemotion', function(event){
             this.cameraoutput.src = imagescaptured[counter]
             counter++
         }
-
+        document.getElementById('imageindex').innerText = counter
     }
     else if (movement < -3000){
         cameraoutput.src = imagescaptured[counter]
@@ -70,6 +70,7 @@ window.addEventListener('devicemotion', function(event){
             this.cameraoutput.src = imagescaptured[counter]
             counter++
         }
+        document.getElementById('imageindex').innerText = counter
     }
     else {
         // document.getElementById("indicator").innerText = 'stationary'
