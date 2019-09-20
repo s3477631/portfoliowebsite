@@ -64,3 +64,17 @@ window.addEventListener('devicemotion', function(event){
     }
   
   });
+  
+let ticking = false;
+window.addEventListener('scroll', function(e){
+  last_known = window.scrollY;
+  console.log(window)
+if (!ticking) {
+window.requestAnimationFrame(function() {
+  doSomething(last_known);
+  ticking = false;
+});
+
+ticking = true;
+}
+});
