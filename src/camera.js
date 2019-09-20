@@ -45,7 +45,7 @@ cameraTrigger.onclick = function() {
 window.addEventListener('devicemotion', function(event){
     var motioned = event.acceleration.z;
     var movement = Math.round(motioned * 1000);
-    
+    cameraTrigger.style.display = "none";
     if(movement > 3000){
     //   document.getElementById("indicator").innerText = 'back';
    
@@ -63,6 +63,7 @@ window.addEventListener('devicemotion', function(event){
         cameraoutput.src = imagescaptured[counter]
     //   document.getElementById("indicator").innerText = 'forward'
     document.getElementById('noimages').innerText = counter
+         cameraTrigger.style.display = "none";
         if(counter < imagescaptured.length && counter >= 0){
         counter++
         }
