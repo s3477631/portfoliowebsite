@@ -2,8 +2,6 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -13,7 +11,7 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 10rem;
+  font-size: 6rem;
 }
 
 body main {
@@ -23,8 +21,10 @@ body main {
 body main div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 40vh 20vh 30vh 10vh;
+      grid-template-rows: 40vh 20vh 30vh 10vh;
   overflow: hidden;
 }
 
@@ -37,11 +37,11 @@ body main div img {
 body main div h2 {
   -ms-grid-column-align: center;
       justify-self: center;
-  font-size: 12rem;
+  font-size: 14rem;
 }
 
 body main div input {
   text-align: center;
-  font-size: 8rem;
+  font-size: 3rem;
 }
 /*# sourceMappingURL=ruokstylesheet.css.map */

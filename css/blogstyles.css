@@ -2,8 +2,6 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -13,7 +11,7 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 10rem;
+  font-size: 6rem;
 }
 
 div ul {

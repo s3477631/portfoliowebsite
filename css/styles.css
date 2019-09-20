@@ -1,12 +1,7 @@
 div {
-  -o-object-fit: contain;
-     object-fit: contain;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50vw 50vw;
-      grid-template-columns: 50vw 50vw;
-  -ms-grid-rows: 49.5vh 49.5vh;
-      grid-template-rows: 49.5vh 49.5vh;
+  grid: 50% 50vh/ 50vw 50vh;
   background-color: rgba(219, 37, 255, 0.452);
 }
 
@@ -18,10 +13,8 @@ div div img {
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
   border: 0.5rem dashed white;
-  -o-object-fit: fill;
-     object-fit: fill;
-  height: 99%;
-  width: 99%;
+  height: 100%;
+  width: 100%;
 }
 
 div div div {
@@ -54,10 +47,10 @@ div div:hover {
   div {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 100vw;
-        grid-template-columns: 100vw;
-    -ms-grid-rows: 100vh;
-        grid-template-rows: 100vh;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 25% 25% 25% 25%;
+        grid-template-rows: 25% 25% 25% 25%;
     overflow: hidden;
   }
   div div {
@@ -65,10 +58,10 @@ div div:hover {
   }
   div div img {
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
   }
   div div div {
-    top: 80vh;
+    top: 70vh;
   }
   div div div span {
     font-size: 3.5rem;
