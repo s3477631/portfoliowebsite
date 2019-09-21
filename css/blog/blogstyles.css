@@ -11,7 +11,40 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 3vw;
+}
+
+main {
+  margin-top: -2vh;
+}
+
+section img {
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+section span {
+  font-size: 20vw;
+  position: absolute;
+  -webkit-text-decoration-color: aqua;
+          text-decoration-color: aqua;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  top: 10vh;
+  z-index: 10;
+  text-shadow: 2px 2px 3px #bbb;
+  color: #3022ee;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+div {
+  margin-top: 0;
 }
 
 div ul {
@@ -41,7 +74,7 @@ div ul li div img {
 
 div ul li div div {
   color: green;
-  font-size: 2rem;
+  font-size: 3vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

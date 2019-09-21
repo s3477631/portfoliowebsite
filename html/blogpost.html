@@ -10,13 +10,17 @@
     <script src="../src/js/blog/blogpost.js"></script>
   </head>
   <body>
-    <h1 alt="Devin's blog posts">Devin's Blog</h1>
-    <nav>
-      <a href="./index.html" alt="go back to home page">Home Page</a>
-      <a href="./gamepage.html" alt="go back to home page">Game</a>
-      <a href="./ruokapp.html" alt="go back to home page">RUOK</a>
-      <a href="./aboutme.html" alt="go back to home page">About Me</a>
-    </nav>
+    <section>
+        <span>Devin's Blog</span>
+        <img src="../assets/blogpost/blogbanner.jpg" alt="Devin's Blog" /> 
+        <nav>
+            <a href="./index.html" alt="go back to home page">Home Page</a>
+            <a href="./gamepage.html" alt="go back to home page">Game</a>
+            <a href="./ruokapp.html" alt="go back to home page">RUOK</a>
+            <a href="./aboutme.html" alt="go back to home page">About Me</a>
+        </nav>
+    </section>
+   <main>
     <section>
       <div>
         <ul>
@@ -63,6 +67,70 @@
               </div>
             </li>
           </article>
+          <article>
+              <li>
+                <div onclick="expander(id)" id="third_post">
+                  <img
+                    alt="second blog post image"
+                    src="../assets/blogpost/blogpost_matrix.jpg"
+                  />
+                  <div>Level One Vuejs</div>
+                  <h2 style="visibility: hidden;">
+                    Vuejs tutorial one: <em>v-model directive.</em>
+                  </h2>
+                  <p style="visibility: hidden;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dolorum cumque nam dicta, fugiat minus optio molestiae
+                    necessitatibus veniam at unde, temporibus, laborum quod
+                    laudantium perspiciatis obcaecati consequatur maiores eos
+                    culpa?
+                  </p>
+                </div>
+              </li>
+            </article>
+            <article>
+                <li>
+                  <div onclick="expander(id)" id="fourth_post">
+                    <img
+                      alt="second blog post image"
+                      src="../assets/blogpost/blogpost_matrix.jpg"
+                    />
+                    <div>Level One Vuejs</div>
+                    <h2 style="visibility: hidden;">
+                      Vuejs tutorial one: <em>v-model directive.</em>
+                    </h2>
+                    <p style="visibility: hidden;">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Dolorum cumque nam dicta, fugiat minus optio molestiae
+                      necessitatibus veniam at unde, temporibus, laborum quod
+                      laudantium perspiciatis obcaecati consequatur maiores eos
+                      culpa?
+                    </p>
+                  </div>
+                </li>
+              </article>
+              <article>
+                  <li>
+                    <div onclick="expander(id)" id="fifth_post">
+                      <img
+                        alt="second blog post image"
+                        src="../assets/blogpost/blogpost_matrix.jpg"
+                      />
+                      <div>Level One Vuejs</div>
+                      <h2 style="visibility: hidden;">
+                        Vuejs tutorial one: <em>v-model directive.</em>
+                      </h2>
+                      <p style="visibility: hidden;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum cumque nam dicta, fugiat minus optio molestiae
+                        necessitatibus veniam at unde, temporibus, laborum quod
+                        laudantium perspiciatis obcaecati consequatur maiores eos
+                        culpa?
+                      </p>
+                    </div>
+                  </li>
+                </article>
+              </main>
         </ul>
       </div>
     </section>
