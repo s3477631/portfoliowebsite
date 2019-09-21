@@ -27,7 +27,7 @@ const cameraoutput = document.querySelector("#camera--output")
 const imageoutput = document.createElement("img");
 const filterimage = document.createElement("img"); 
 filterimage.setAttribute("src", '../assets/working_project/ruok/filter.png')
-filterimage.setAttribute("style", "height: 100vwh; width: 100vw;")
+filterimage.setAttribute("style", "height: 100vh; width: 100vw;")
 const cameraSensor = document.createElement("canvas")
         cameraSensor.setAttribute("id", "canvas");
 const imagescaptured = []
@@ -37,7 +37,7 @@ cameraTrigger.onclick = function() {
     cameraSensor.width = cameraView.videoWidth;
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
-    cameraSensor.getContext("2d").drawImage(filterimage, 0, 0, 1280, 720);
+    cameraSensor.getContext("2d").drawImage(filterimage, 0, 0);
     imagescaptured.push(cameraSensor.toDataURL("image/webp"));
     console.log(imagescaptured)
 };
