@@ -21,7 +21,7 @@ div div div {
   position: absolute;
   opacity: 0.75;
   background: #353535;
-  height: 4rem;
+  height: 7vh;
   width: 200%;
   z-index: 100;
   display: -webkit-box;
@@ -32,7 +32,7 @@ div div div {
 div div div span {
   text-align: center;
   opacity: 1;
-  font-size: 2rem;
+  font-size: 5vh;
   color: white;
   font-weight: bold;
 }
@@ -66,32 +66,7 @@ div div:hover {
     top: 70vh;
   }
   div div div span {
-    font-size: 3.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  div {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: 25% 25% 25% 25%;
-        grid-template-rows: 25% 25% 25% 25%;
-    overflow: hidden;
-  }
-  div div {
-    width: 100vw;
-  }
-  div div img {
-    width: 100vw;
-    height: 100vh;
-  }
-  div div div {
-    top: 70vh;
-  }
-  div div div span {
-    font-size: 3.5rem;
+    font-size: 5vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */

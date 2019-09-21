@@ -1,10 +1,4 @@
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: end;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
   background-color: red;
 }
 
@@ -14,25 +8,37 @@ nav a {
   font-size: 6vh;
 }
 
-nav .tabs {
+nav .hamburger {
   display: block;
   position: absolute;
   height: 8px;
   width: 10%;
   z-index: 1000;
+}
+
+nav .hamburger span {
   left: 10vw;
-  margin-bottom: 5px;
-  padding: 0;
-  background: #ffffffa9;
   border-radius: 9px;
   opacity: 1;
+  margin-bottom: 1.1vh;
+  background: #ffffffa9;
   -webkit-animation-name: navchange;
           animation-name: navchange;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   a {
     display: none;
   }
@@ -44,7 +50,7 @@ nav .tabs {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   nav .tabs {
     display: none;
   }

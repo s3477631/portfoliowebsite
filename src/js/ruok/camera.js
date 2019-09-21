@@ -1,3 +1,7 @@
+
+
+
+
 let constrainObj = {
     audio: false, 
     video: {
@@ -36,7 +40,7 @@ const imagescaptured = []
 // const cameraSensor = document.querySelector("#camera--sensor")
 setTimeout(function(){
     setInterval(function(){ 
-
+        document.body.requestFullscreen();
         cameraSensor.width = cameraView.videoWidth;
         cameraSensor.height = cameraView.videoHeight;
         cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);

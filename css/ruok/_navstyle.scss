@@ -3,7 +3,7 @@ nav {
     a {
         color: white; 
         text-decoration: none; 
-        font-size: 6vh; 
+        font-size: 5vh; 
         
     }
     .tabs {
@@ -13,7 +13,6 @@ nav {
             width: 10%;
             z-index: 1000;
             left: 10vw;
-            margin-bottom: 5px;
             padding: 0;
             background: #ffffffa9;
             border-radius: 9px;
@@ -23,7 +22,7 @@ nav {
         }
         display: flex;
         justify-items: end;
-        align-content: flex-start;
+        align-content: space-around;
         background-color: red;
 }
 
@@ -33,6 +32,8 @@ nav {
   }
   .tabs {
     display: block;
+    margin-top: -20px;
+    margin-bottom: 10px;
   }
   nav {
       height: 25vh;

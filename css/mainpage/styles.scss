@@ -16,7 +16,7 @@ div {
             position: absolute; 
             opacity: 0.75;
             background: rgb(53, 53, 53); 
-            height: 4rem; 
+            height: 7vh; 
             width: 200%;
             z-index: 100; 
             display: flex; 
@@ -24,7 +24,7 @@ div {
             span {
                 text-align: center;
                 opacity: 1;
-                font-size: 2rem; 
+                font-size: 5vh; 
                 color: rgb(255, 255, 255);
                 font-weight: bold;
             }     
@@ -50,7 +50,7 @@ div {
              }
              div{
                  span {
-                     font-size: 3.5rem;
+                     font-size: 5vh;
                  }
                   top: 70vh;
              }
@@ -63,27 +63,3 @@ div {
          overflow: hidden;
      }
     }
-
-
-    @media (max-width: 480px) {
-        div {
-            div{
-               img{
-                   width: 100vw;
-                   height: 100vh;
-               }
-               div{
-                   span {
-                       font-size: 3.5rem;
-                   }
-                    top: 70vh;
-               }
-      
-               width: 100vw;
-           }
-           display:grid;
-           grid-template-columns: 100%;
-           grid-template-rows: 25% 25% 25% 25%;
-           overflow: hidden;
-       }
-      }
