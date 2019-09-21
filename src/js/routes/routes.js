@@ -20,5 +20,6 @@ function completedprojects(){
 }
 
 function opencamera(){
+  document.body.requestFullscreen();
   return window.location.href='./ruokcamera.html'
 }
