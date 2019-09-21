@@ -14,26 +14,27 @@ div {
         // parent element (the image) - I enjoy the visual effect this creates.
         div {
             position: absolute; 
-            top: 40vh;
             opacity: 0.75;
             background: rgb(53, 53, 53); 
             height: 4rem; 
-            width: 130%;
+            width: 200%;
             z-index: 100; 
+            display: flex; 
             
             span {
                 text-align: center;
                 opacity: 1;
-                font-size: 3rem; 
+                font-size: 2rem; 
                 color: rgb(255, 255, 255);
                 font-weight: bold;
-            }        
+            }     
         }
         &:hover {
             cursor: pointer;
             transform: rotate(360deg);
             transition: 1s;
         }
+     
         position: relative;
     }
     display:grid;
@@ -64,3 +65,25 @@ div {
     }
 
 
+    @media (max-width: 480px) {
+        div {
+            div{
+               img{
+                   width: 100vw;
+                   height: 100vh;
+               }
+               div{
+                   span {
+                       font-size: 3.5rem;
+                   }
+                    top: 70vh;
+               }
+      
+               width: 100vw;
+           }
+           display:grid;
+           grid-template-columns: 100%;
+           grid-template-rows: 25% 25% 25% 25%;
+           overflow: hidden;
+       }
+      }

@@ -27,20 +27,28 @@ const cameraoutput = document.querySelector("#camera--output")
 const imageoutput = document.createElement("img");
 const filterimage = document.createElement("img"); 
 filterimage.setAttribute("src", '../assets/working_project/ruok/filter.png')
-filterimage.setAttribute("style", "height: 100vh; width: 100vw;")
+filterimage.setAttribute("style", "height: 100%; width: 100%;")
 const cameraSensor = document.createElement("canvas")
         cameraSensor.setAttribute("id", "canvas");
+const fontlayer = cameraSensor.getContext("2d");
+fontlayer.font= "100px Arial;"
 const imagescaptured = []
 // const cameraSensor = document.querySelector("#camera--sensor")
+setTimeout(function(){
+    setInterval(function(){ 
 
-cameraTrigger.onclick = function() {
-    cameraSensor.width = cameraView.videoWidth;
-    cameraSensor.height = cameraView.videoHeight;
-    cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
-    cameraSensor.getContext("2d").drawImage(filterimage, 0, 0);
-    imagescaptured.push(cameraSensor.toDataURL("image/webp"));
-    console.log(imagescaptured)
-};
+        cameraSensor.width = cameraView.videoWidth;
+        cameraSensor.height = cameraView.videoHeight;
+        cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
+        cameraSensor.getContext("2d").drawImage(filterimage, 0, 0);
+        fontlayer.fillText("Hello World", 30, 30);
+        imagescaptured.push(cameraSensor.toDataURL("image/webp"));     
+        console.log(imagescaptured)
+         }, 2000);
+}, 2000)
+// cameraTrigger.onclick = function() {
+  
+// };
 
 //  showimage.onclick = function() {
 //      cameraoutput.src = imagescaptured[0]
