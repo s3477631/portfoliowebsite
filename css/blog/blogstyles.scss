@@ -32,6 +32,7 @@ div {
                 img {
                     height: 100%;
                     width: 10rem;
+                    opacity: 1;
                     margin-right: 10rem; 
                 }
                 div {
@@ -40,17 +41,20 @@ div {
                         align-items: center;
 
                 }
-                background-color: #bbb;
+                background-color: rgba(255, 198, 198, 0.89);
                 border-bottom: 1px solid black; 
                 display: flex;
                 height: 20vh;
             }
+            padding: 1vh;
             list-style: none;
-            width: 100%; 
-            border: 1px solid black; 
+            width: 100%;  
         }
         padding: 0;
     }
     margin-top: 0;
 }
 
+@media (max-width: 480px) {
+    
+}

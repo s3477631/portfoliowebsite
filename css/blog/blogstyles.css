@@ -52,13 +52,13 @@ div ul {
 }
 
 div ul li {
+  padding: 1vh;
   list-style: none;
   width: 100%;
-  border: 1px solid black;
 }
 
 div ul li div {
-  background-color: #bbb;
+  background-color: rgba(255, 198, 198, 0.89);
   border-bottom: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,6 +69,7 @@ div ul li div {
 div ul li div img {
   height: 100%;
   width: 10rem;
+  opacity: 1;
   margin-right: 10rem;
 }
 
