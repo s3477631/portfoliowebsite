@@ -1,20 +1,107 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: end;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: red;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 6vh;
+}
+
+nav .tabs {
+  display: block;
+  position: absolute;
+  height: 8px;
+  width: 10%;
+  z-index: 1000;
+  left: 10vw;
+  margin-bottom: 5px;
+  padding: 0;
+  background: #ffffffa9;
+  border-radius: 9px;
+  opacity: 1;
+  -webkit-animation-name: navchange;
+          animation-name: navchange;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@media (max-width: 800px) {
+  a {
+    display: none;
+  }
+  .tabs {
+    display: block;
+  }
+  nav {
+    height: 25vh;
+  }
+}
+
+@media (min-width: 800px) {
+  nav .tabs {
+    display: none;
+  }
+  a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@-webkit-keyframes navchange {
+  0% {
+    left: 90vw;
+  }
+  100% {
+    left: 10vw;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes navchange {
+  0% {
+    left: 90vw;
+  }
+  100% {
+    left: 10vw;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 body {
   background: blue;
 }
 
-body figure {
-  margin: 0;
+section div {
+  display: -ms-grid;
+  display: grid;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-grid-rows: 100vh 50vh;
+  -ms-grid-columns: 33vw 33vw 33vw;
+      grid-template: 100vh 50vh / 33vw 33vw 33vw;
 }
 
-body img {
-  height: 40vh;
-  width: 33vw;
+section div img {
+  height: 100%;
+  width: 100%;
 }
 
-body div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+section div span {
+  background-color: rgba(187, 187, 187, 0.637);
+  border-radius: 1.1vh;
 }
 
 form {
@@ -54,21 +141,5 @@ form button {
   color: white;
   border-radius: 1.1rem;
   height: 3rem;
-}
-
-@media (max-width: 480px) {
-  form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  form input {
-    text-align: center;
-    width: 100vw;
-  }
 }
 /*# sourceMappingURL=aboutme.css.map */

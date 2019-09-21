@@ -1,17 +1,29 @@
+@import "navstyle";
 body {
     background: blue;
-    figure{
-        margin: 0; 
-    }
-    img {
-        height: 40vh;
-        width: 33vw;
-    }
-    div {
-        display: flex;
-    }
-       
+    
 }
+section {
+    div {
+    
+        img {
+            height: 100%;
+             width: 100%;
+        }
+        span {
+            background-color: rgba(187, 187, 187, 0.637);
+            border-radius: 1.1vh;
+
+        }
+        display: grid;
+
+        object-fit: cover;
+        grid-template: 100vh 50vh / 33vw 33vw 33vw ;
+    }
+}
+
+
+
 
 form {
     input {
@@ -41,15 +53,15 @@ form {
    
 }
 
-@media (max-width: 480px) {
-    form {
-        input {
-            text-align: center;
-            width: 100vw;
-        }
-        display: flex;
-        flex-direction: column;
+// @media (max-width: 480px) {
+//     form {
+//         input {
+//             text-align: center;
+//             width: 100vw;
+//         }
+//         display: flex;
+//         flex-direction: column;
        
-    }
+//     }
 
-}
+// }
