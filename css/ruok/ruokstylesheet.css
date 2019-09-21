@@ -1,0 +1,119 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: red;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+body main {
+  background-color: #FEC831;
+}
+
+body main div {
+  display: -ms-grid;
+  display: grid;
+  margin: 2rem;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 40vh 20vh 10vh 10vh 20vh;
+      grid-template-rows: 40vh 20vh 10vh 10vh 20vh;
+  grid-gap: 1.2rem;
+  overflow: hidden;
+}
+
+body main div img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 100%;
+  -webkit-transition: infinite;
+  transition: infinite;
+}
+
+body main div input {
+  text-align: center;
+  font-size: 2rem;
+  -webkit-animation-name: onloader;
+          animation-name: onloader;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+body main div button {
+  border-radius: 2rem;
+  background-color: green;
+  color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes onloader {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  25% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  75% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  80% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes onloader {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  25% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  75% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  80% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=ruokstylesheet.css.map */

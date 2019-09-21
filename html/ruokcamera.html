@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>R U OK?</title>
+    <script src="../src/js/routes/routes.js"></script>
+    <link rel="stylesheet" href="../css/ruok/camerastyle.css"/>
+</head>
+<body>
+    <!-- <main>
+        <div>
+            <video id="video" height="640" width="480"></video>
+        </div>
+    </main> -->
+        <!-- Camera -->
+        <main id="camera">
+            <div>
+                <div>   
+                    <video id="camera--view" autoplay playsinline></video>
+                    <!-- Camera output -->
+                    <!-- <h2 id="acceldata">0</h2> -->
+                    <img src="//:0" alt="" id="camera--output">
+                </div>
+                    <!-- Camera trigger -->
+                <div>   
+                        <!-- <h2 id="indicator">normal state</h2>
+                        <h3 id="rawdata">0</h3>
+                        <h4 id="imageindex">0</h4> -->
+                        <span>Showing image: </span>
+                        <h1 id="noimages">0</h1>
+                        <button id="camera--trigger">Take Picture</button>
+                        <!-- <button id="showimage">showimage</button> -->
+                </div>
+            </div>
+    <script src="../src/js/ruok/camera.js"></script>
+</body>
+</html>
