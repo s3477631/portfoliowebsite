@@ -6,6 +6,14 @@ nav {
         font-size: 3vw; 
         
     }
+    div {
+        span {
+            height: 0.2vh; 
+            width: 1vw; 
+            background-color: brown; 
+            border-radius: 1.2v;
+        }
+    }
     display: flex; 
     width: 100%; 
     justify-content: space-around;

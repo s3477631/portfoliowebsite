@@ -2,16 +2,82 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-items: end;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   background-color: red;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 6vh;
+}
+
+nav .tabs {
+  display: block;
+  position: absolute;
+  height: 8px;
+  width: 10%;
+  z-index: 1000;
+  left: 10vw;
+  margin-bottom: 5px;
+  padding: 0;
+  background: #ffffffa9;
+  border-radius: 9px;
+  opacity: 1;
+  -webkit-animation-name: navchange;
+          animation-name: navchange;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@media (max-width: 800px) {
+  a {
+    display: none;
+  }
+  .tabs {
+    display: block;
+  }
+  nav {
+    height: 25vh;
+  }
+}
+
+@media (min-width: 800px) {
+  nav .tabs {
+    display: none;
+  }
+  a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@-webkit-keyframes navchange {
+  0% {
+    left: 90vw;
+  }
+  100% {
+    left: 10vw;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes navchange {
+  0% {
+    left: 90vw;
+  }
+  100% {
+    left: 10vw;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 body main {
@@ -34,13 +100,12 @@ body main div img {
   -ms-grid-column-align: center;
       justify-self: center;
   height: 100%;
-  -webkit-transition: infinite;
-  transition: infinite;
 }
 
 body main div input {
   text-align: center;
   font-size: 2rem;
+  border-radius: 1.5rem;
   -webkit-animation-name: onloader;
           animation-name: onloader;
   -webkit-animation-duration: 2s;
@@ -48,7 +113,7 @@ body main div input {
 }
 
 body main div button {
-  border-radius: 2rem;
+  border-radius: 1.1rem;
   background-color: green;
   color: white;
   font-size: 2rem;

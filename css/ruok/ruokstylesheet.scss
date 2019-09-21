@@ -5,16 +5,16 @@ body {
        img {
          justify-self: center;
          height: 100%;
-         transition: infinite;
        }
        input{
          text-align: center;
          font-size: 2rem;
+         border-radius: 1.5rem;
          animation-name: onloader; 
          animation-duration: 2s; 
        }
       button {
-        border-radius: 2rem;
+        border-radius: 1.1rem;
         background-color: green; 
         color: white;
         font-size: 2rem; 
@@ -58,3 +58,4 @@ body {
     transform: scale(1.0);  
   }
 }
+
