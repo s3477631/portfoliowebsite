@@ -8,7 +8,6 @@ body {
             }
             img {
                 position: relative;
-                filter: url(#displacementFilter);
             }  
             div {
                 #noimages {
@@ -34,9 +33,6 @@ body {
                 }
                 margin: 0;
             }    
-            svg {
-                display: none;
-            } 
         }
     }
 

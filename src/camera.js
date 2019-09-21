@@ -34,6 +34,7 @@ cameraTrigger.onclick = function() {
     cameraSensor.width = cameraView.videoWidth;
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
+    cameraSensor.getContext("2d").drawImage('../assets/filter.png', 0, 0);
     imagescaptured.push(cameraSensor.toDataURL("image/webp"));
     console.log(imagescaptured)
 };

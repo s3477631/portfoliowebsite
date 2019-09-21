@@ -10,8 +10,6 @@ body main div video {
 
 body main div img {
   position: relative;
-  -webkit-filter: url(#displacementFilter);
-          filter: url(#displacementFilter);
 }
 
 body main div div {
@@ -39,9 +37,5 @@ body main div div button {
   color: white;
   opacity: 0.6;
   text-align: center;
-}
-
-body main div svg {
-  display: none;
 }
 /*# sourceMappingURL=camerastyle.css.map */
