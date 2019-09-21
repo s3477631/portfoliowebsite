@@ -1,0 +1,32 @@
+header {
+  background: #ff8800;
+  padding: 1.1vh;
+  width: 100%;
+  color: white;
+}
+
+section header {
+  width: 100%;
+  font-size: 5vh;
+  background: #240fdf;
+  color: white;
+}
+
+section div {
+  display: -ms-grid;
+  display: grid;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-grid-rows: 100vh 50vh;
+  -ms-grid-columns: 33vw 33vw 33vw;
+      grid-template: 100vh 50vh / 33vw 33vw 33vw;
+}
+
+section div img {
+  height: 100%;
+}
+
+section div p {
+  background: #ff8800;
+}
+/*# sourceMappingURL=completedwork.css.map */

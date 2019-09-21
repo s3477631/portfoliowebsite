@@ -1,0 +1,27 @@
+header{
+    background: rgb(255, 136, 0);
+    padding: 1.1vh;
+    width: 100%;
+    color: white;
+}
+section {
+  
+    header{
+        width: 100%; 
+        font-size: 5vh;
+        background: rgb(36, 15, 223);
+        color: white;
+    }
+
+    div{
+        img {
+            height: 100%;
+        }
+        p {
+            background: rgb(255, 136, 0);
+        }
+        display: grid;
+        object-fit: cover;
+        grid-template: 100vh 50vh / 33vw 33vw 33vw ;
+    }
+}
