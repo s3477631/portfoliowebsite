@@ -36,16 +36,16 @@ section img {
 }
 
 section span {
-  font-size: 20vw;
+  font-size: 10vw;
   position: absolute;
-  -webkit-text-decoration-color: aqua;
-          text-decoration-color: aqua;
+  -webkit-text-decoration-color: #b16a0d;
+          text-decoration-color: #b16a0d;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   top: 10vh;
   z-index: 10;
   text-shadow: 2px 2px 3px #bbb;
-  color: #3022ee;
+  color: #ee2c12;
   font-family: sans-serif;
   text-align: center;
 }
