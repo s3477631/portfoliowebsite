@@ -41,21 +41,15 @@ homepage.innerText = "Home";
 completedpro.innerText = "Completed Project";
 aboutdevin.innerText = "About Me";
 closebtn.setAttribute("style", "display: block; background-color: #00000000;");
-closebtn.setAttribute("onclick", "closemenu()");
 aboutdevin.setAttribute("style", "display: block; position: absolute; top: 30vh;");
 aboutdevin.setAttribute("href", "../html/aboutme.html");
 completedpro.setAttribute("style", "display: block; position: absolute; top: 20vh;");
 completedpro.setAttribute("href", "../html/completeproj.html")
 homepage.setAttribute("href", "../index.html");
 homepage.setAttribute("style", "display: block; top: 10vh; position: absolute; width: 100%;");
-listitems.setAttribute('style', "list-style: none; display: flex; flex-direction: column; ");
+listitems.setAttribute('style', "list-style: none; display: flex; flex-direction: column;");
 listitems.appendChild(closebtn);
 listitems.appendChild(homepage);
 listitems.appendChild(completedpro);
 listitems.appendChild(aboutdevin);
 
-
-function closemenu() {
-  var closemenunow = document.getElementById("pop_out_menu")
-  closemenunow.setAttribute("style", "height: 0vh;");
-}
