@@ -101,7 +101,7 @@ body main div img {
 
 body main div input {
   text-align: center;
-  font-size: 2rem;
+  font-size: 5vh;
   border-radius: 1.5rem;
   -webkit-animation-name: onloader;
           animation-name: onloader;
@@ -113,7 +113,7 @@ body main div button {
   border-radius: 1.1rem;
   background-color: green;
   color: white;
-  font-size: 2rem;
+  font-size: 4vh;
   font-family: sans-serif;
 }
 

@@ -8,7 +8,7 @@ body {
        }
        input{
          text-align: center;
-         font-size: 2rem;
+         font-size: 5vh;
          border-radius: 1.5rem;
          animation-name: onloader; 
          animation-duration: 2s; 
@@ -17,9 +17,10 @@ body {
         border-radius: 1.1rem;
         background-color: green; 
         color: white;
-        font-size: 2rem; 
+        font-size: 4vh; 
         font-family: sans-serif;
        }
+  
        display:grid;
        margin: 2rem;
        grid-template-columns: 100%;
