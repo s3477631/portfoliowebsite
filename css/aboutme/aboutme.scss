@@ -1,66 +1,64 @@
 @import "navstyle";
 body {
-    background: blue;
-    
+    background-color: #07BFDB;
 }
 section {
     div {
-    
         img {
             height: 100%;
              width: 100%;
         }
-        span {
-            background-color: rgba(187, 187, 187, 0.637);
+        div {
+            background-color: #FA22F2;
             border-radius: 1.1vh;
-
+            h1 {
+                color: white; 
+            }
+            p {
+                color: white;
+                font-size: 2.4vh;
+            }
+            display: flex; 
+            padding: 1.3vh;
+            flex-direction: column;
+        }
+        nav {
+            grid-column-start: 1;
+            grid-column-end: 4;
         }
         display: grid;
         object-fit: cover;
-        grid-template: 100vh 50vh / 33vw 33vw 33vw ;
+        grid-template-areas: 'nz au ir'
+                             'drawone drawtwo'
+                             'navbar';
+        grid-template-rows: 40vh 40vh 10vh;
+        grid-template-columns: 33vw 33vw 33vw;
+        grid-gap: 1.2vw;
     }
 }
 
-
-
-
-form {
-    input {
-        width: 35vw; 
-        font-size: 2rem;
-        border-radius: 1rem;
+@media (min-width: 500px) and (max-width: 1000px){
+    section {
+        div {
+            img {
+                height: 100%;
+                 width: 100%;
+            }
+            div {
+                background-color: #FA22F2;
+                border-radius: 1.1vh;
+                h1 {
+                    color: white; 
+                }
+                p {
+                    color: white;
+                    font-size: 1.7vh;
+                }
+            }
+        }
     }
-    textarea{
-        width: 35vw;
-        font-size: 1.2rem;
-    }
-    button {
-        width: 35vw; 
-        background-color: rgb(0, 47, 255); 
-        color: white; 
-        border-radius: 1.1rem;
-        height: 3rem;
-    }
-    background-color: rgba(14, 153, 9, 0.63); 
-    border-radius: 1.2rem;
-    box-shadow: 2px 2px 1px 2px black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 30vh;
-   
 }
 
-// @media (max-width: 480px) {
-//     form {
-//         input {
-//             text-align: center;
-//             width: 100vw;
-//         }
-//         display: flex;
-//         flex-direction: column;
-       
-//     }
-
-// }
+@media (max-width: 500px) {
+    
+}

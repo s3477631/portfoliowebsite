@@ -23,7 +23,7 @@ section {
         object-fit: cover;
         grid-template: 50vh 50vh / 33vw 33vw 33vw ;
     }
-    background-color: rgb(250, 250, 100);
+    background-color: #07BFDB;
 }
 div {
     div{
@@ -44,8 +44,6 @@ div {
         display: flex; 
         flex-direction: column; 
         background: rgba(255, 136, 0, 0.685);
-        border-radius: 2vw;
-        
         height: 100%;
     }
 }

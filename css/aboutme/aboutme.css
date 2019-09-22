@@ -1,52 +1,51 @@
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   background-color: red;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 6vh;
+  font-size: 5vh;
 }
 
-nav .hamburger {
-  display: block;
-  position: absolute;
-  height: 8px;
-  width: 10%;
-  z-index: 1000;
-}
-
-nav .hamburger span {
-  left: 10vw;
-  border-radius: 9px;
-  opacity: 1;
-  margin-bottom: 1.1vh;
-  background: #ffffffa9;
-  -webkit-animation-name: navchange;
-          animation-name: navchange;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: center;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-}
-
-@media (max-width: 950px) {
+@media (max-width: 800px) {
   a {
     display: none;
   }
-  .tabs {
+  span {
+    margin: 1.1vh;
+    background-color: white;
+    border-radius: 1.1vh;
+    height: 1.2vh;
+    width: 10vw;
+    -webkit-animation-name: navchange;
+            animation-name: navchange;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     display: block;
   }
   nav {
-    height: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 800px) {
   nav .tabs {
     display: none;
   }
@@ -62,10 +61,10 @@ nav .hamburger span {
 
 @-webkit-keyframes navchange {
   0% {
-    left: 90vw;
+    margin-left: 90vw;
   }
   100% {
-    left: 10vw;
+    margin-left: 1.1vw;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -73,17 +72,17 @@ nav .hamburger span {
 
 @keyframes navchange {
   0% {
-    left: 90vw;
+    margin-left: 90vw;
   }
   100% {
-    left: 10vw;
+    margin-left: 1.1vw;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
 
 body {
-  background: blue;
+  background-color: #07BFDB;
 }
 
 section div {
@@ -91,9 +90,12 @@ section div {
   display: grid;
   -o-object-fit: cover;
      object-fit: cover;
-  -ms-grid-rows: 100vh 50vh;
+      grid-template-areas: 'nz au ir' 'drawone drawtwo' 'navbar';
+  -ms-grid-rows: 40vh 40vh 10vh;
+      grid-template-rows: 40vh 40vh 10vh;
   -ms-grid-columns: 33vw 33vw 33vw;
-      grid-template: 100vh 50vh / 33vw 33vw 33vw;
+      grid-template-columns: 33vw 33vw 33vw;
+  grid-gap: 1.2vw;
 }
 
 section div img {
@@ -101,47 +103,49 @@ section div img {
   width: 100%;
 }
 
-section div span {
-  background-color: rgba(187, 187, 187, 0.637);
+section div div {
+  background-color: #FA22F2;
   border-radius: 1.1vh;
-}
-
-form {
-  background-color: rgba(14, 153, 9, 0.63);
-  border-radius: 1.2rem;
-  -webkit-box-shadow: 2px 2px 1px 2px black;
-          box-shadow: 2px 2px 1px 2px black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 1.3vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 30vh;
 }
 
-form input {
-  width: 35vw;
-  font-size: 2rem;
-  border-radius: 1rem;
-}
-
-form textarea {
-  width: 35vw;
-  font-size: 1.2rem;
-}
-
-form button {
-  width: 35vw;
-  background-color: #002fff;
+section div div h1 {
   color: white;
-  border-radius: 1.1rem;
-  height: 3rem;
+}
+
+section div div p {
+  color: white;
+  font-size: 2.4vh;
+}
+
+section div nav {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  section div img {
+    height: 100%;
+    width: 100%;
+  }
+  section div div {
+    background-color: #FA22F2;
+    border-radius: 1.1vh;
+  }
+  section div div h1 {
+    color: white;
+  }
+  section div div p {
+    color: white;
+    font-size: 1.7vh;
+  }
 }
 /*# sourceMappingURL=aboutme.css.map */

@@ -85,7 +85,7 @@ header {
 }
 
 section {
-  background-color: #fafa64;
+  background-color: #07BFDB;
 }
 
 section header {
@@ -118,7 +118,6 @@ div div {
       -ms-flex-direction: column;
           flex-direction: column;
   background: rgba(255, 136, 0, 0.685);
-  border-radius: 2vw;
   height: 100%;
 }
 
