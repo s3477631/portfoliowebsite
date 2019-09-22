@@ -23,3 +23,10 @@ function opencamera(){
   document.body.requestFullscreen();
   return window.location.href='./ruokcamera.html'
 }
+
+function mobilemenu() {
+ var showmenu = document.getElementById("menumob");
+ showmenu.style.display = "block"; 
+ 
+}
+

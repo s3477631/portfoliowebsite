@@ -31,7 +31,6 @@ const cameraoutput = document.querySelector("#camera--output")
 const imageoutput = document.createElement("img");
 const filterimage = document.createElement("img"); 
 filterimage.setAttribute("src", '../assets/working_project/ruok/filter.png')
-filterimage.setAttribute("style", "height: 100%; width: 100%;")
 const cameraSensor = document.createElement("canvas")
         cameraSensor.setAttribute("id", "canvas");
 const fontlayer = cameraSensor.getContext("2d");
@@ -93,13 +92,15 @@ window.addEventListener('devicemotion', function(event){
   });
 
   function doSomething(scroll_pos){
-      console.log(scroll_pos)
+    //   cameraoutput.src = imagescaptured[scroll_pos]
+ 
+    console.log(scroll_pos);
   }
   
 let ticking = false;
 window.addEventListener('scroll', function(e){
-  last_known = window.scrollY;
-  console.log(window)
+  last_known = window.scroll;
+//   console.log(window)
 if (!ticking) {
 window.requestAnimationFrame(function() {
   doSomething(last_known);

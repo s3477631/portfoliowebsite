@@ -2,7 +2,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-items: end;
+  justify-items: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
   background-color: red;
@@ -14,34 +14,30 @@ nav a {
   font-size: 5vh;
 }
 
-nav .tabs {
-  display: block;
-  position: absolute;
-  height: 8px;
-  width: 10%;
-  z-index: 1000;
-  left: 10vw;
-  padding: 0;
-  background: #ffffffa9;
-  border-radius: 9px;
-  opacity: 1;
-  -webkit-animation-name: navchange;
-          animation-name: navchange;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
 @media (max-width: 800px) {
   a {
     display: none;
   }
-  .tabs {
+  span {
+    margin: 1.1vh;
+    background-color: white;
+    border-radius: 1.1vh;
+    height: 1.2vh;
+    width: 10vw;
+    -webkit-animation-name: navchange;
+            animation-name: navchange;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     display: block;
-    margin-top: -20px;
-    margin-bottom: 10px;
   }
   nav {
-    height: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -61,10 +57,10 @@ nav .tabs {
 
 @-webkit-keyframes navchange {
   0% {
-    left: 90vw;
+    margin-left: 90vw;
   }
   100% {
-    left: 10vw;
+    margin-left: 1.1vw;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -72,10 +68,10 @@ nav .tabs {
 
 @keyframes navchange {
   0% {
-    left: 90vw;
+    margin-left: 90vw;
   }
   100% {
-    left: 10vw;
+    margin-left: 1.1vw;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }

@@ -5,6 +5,10 @@ header {
   color: white;
 }
 
+section {
+  background-color: #fafa64;
+}
+
 section header {
   width: 100%;
   font-size: 5vh;
@@ -17,16 +21,100 @@ section div {
   display: grid;
   -o-object-fit: cover;
      object-fit: cover;
-  -ms-grid-rows: 100vh 50vh;
+  -ms-grid-rows: 50vh 50vh;
   -ms-grid-columns: 33vw 33vw 33vw;
-      grid-template: 100vh 50vh / 33vw 33vw 33vw;
+      grid-template: 50vh 50vh / 33vw 33vw 33vw;
 }
 
 section div img {
   height: 100%;
 }
 
-section div p {
-  background: #ff8800;
+div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(255, 136, 0, 0.685);
+  border-radius: 2vw;
+  height: 100%;
+}
+
+div div h1 {
+  color: white;
+  font-size: 3vh;
+  font-family: sans-serif;
+  text-decoration: underline;
+  text-align: center;
+}
+
+div div ul li {
+  color: white;
+  font-size: 3vh;
+}
+
+@media (max-width: 480px) {
+  section header {
+    width: 100vw;
+    font-size: 5vh;
+    background: #ff0909;
+    color: white;
+  }
+  section div {
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 50vh 50vh 50vh 50vh 50vh 50vh;
+    -ms-grid-columns: 100vw;
+        grid-template: 50vh 50vh 50vh 50vh 50vh 50vh/ 100vw;
+  }
+  section div img {
+    height: 100%;
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  section div div {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    background-color: #b133b1;
+  }
+  div div h1 {
+    margin: 0;
+  }
+}
+
+@media (min-width: 480px) {
+  section header {
+    width: 100vw;
+    font-size: 5vh;
+    background: #003cff;
+    color: white;
+  }
+  section div {
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 50vh 50vh 50vh;
+    -ms-grid-columns: 50vw 50vw;
+        grid-template: 50vh 50vh 50vh/ 50vw 50vw;
+  }
+  section div img {
+    height: 100%;
+    width: 100%;
+  }
+  section div div {
+    background-color: rgba(177, 51, 177, 0.795);
+  }
+  div div h1 {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=completedwork.css.map */
