@@ -1,0 +1,59 @@
+
+nav { 
+    a {
+        color: white; 
+        text-decoration: none; 
+        font-size: 5vh; 
+        
+    }
+         display: flex;
+        justify-items: center;
+         align-content: space-around;
+        background-color: red;
+}
+
+@media (max-width: 800px) {
+  a {
+      display: none; 
+  }
+
+    span { 
+        margin: 1.1vh;
+         background-color: rgb(255, 255, 255); 
+         border-radius: 1.1vh;
+       height: 1.2vh; 
+       width: 10vw;
+       animation-name: navchange;
+       animation-duration: 2s;
+       display: block;
+      }
+  nav { 
+        display: flex; 
+        flex-direction: column; 
+
+  }
+
+  
+}
+@media (min-width: 800px) {
+    nav {
+        .tabs {
+            display: none; 
+        }
+    }
+    a {
+        display: flex; 
+        width: 100%; 
+        justify-content: space-around;
+    }
+  }
+
+  @keyframes navchange {
+      0% {
+        margin-left: 90vw;
+      }
+      100% {
+          margin-left: 1.1vw;
+          transform: rotate(360deg);
+      }
+  }

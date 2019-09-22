@@ -1,5 +1,7 @@
+@import "navstyle";
+
 header{
-    background: rgb(255, 136, 0);
+    background: #5707DB;
     padding: 1.1vh;
     width: 100%;
     color: white;
@@ -9,7 +11,7 @@ section {
     header{
         width: 100%; 
         font-size: 5vh;
-        background: rgb(36, 15, 223);
+        background: #0540F2
         color: white;
     }
     div{
@@ -35,7 +37,7 @@ div {
         ul {
             li {
                 color: white;
-                font-size: 3vh;
+                font-size: 2vh;
             
             }
         }
@@ -49,6 +51,10 @@ div {
 }
 
 @media (max-width: 480px){
+    nav {
+        background-color: green;
+    }
+
     section {
   
         header{
@@ -68,6 +74,13 @@ div {
                 order: 1; 
                 background-color: rgb(177, 51, 177);
             }
+            ul {
+                li {
+                    font-size: 3vh;
+                    padding-bottom: 1.1vh;
+                }
+            }
+
             object-fit: cover;
             display: grid;
             grid-template: 50vh 50vh 50vh 50vh 50vh 50vh/ 100vw ;
@@ -95,12 +108,21 @@ div {
                 height: 100%;
                 width: 100%;
             }
+            ul {
+                li {
+                 font-size: 3vh;
+                 padding-bottom: 1.1vh;
+                }
+                text-align: left;
+                list-style-type: upper-roman;
+            }
             div { 
-                background-color: rgba(177, 51, 177, 0.795);
+                background-color: rgb(211, 48, 211);
             }
             object-fit: cover;
             display: grid;
             grid-template: 50vh 50vh 50vh/ 50vw 50vw;
+            grid-gap: 1.1vh;
         }
     }
     div {

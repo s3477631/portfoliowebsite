@@ -1,5 +1,84 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  background-color: red;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 5vh;
+}
+
+@media (max-width: 800px) {
+  a {
+    display: none;
+  }
+  span {
+    margin: 1.1vh;
+    background-color: white;
+    border-radius: 1.1vh;
+    height: 1.2vh;
+    width: 10vw;
+    -webkit-animation-name: navchange;
+            animation-name: navchange;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    display: block;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 800px) {
+  nav .tabs {
+    display: none;
+  }
+  a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@-webkit-keyframes navchange {
+  0% {
+    margin-left: 90vw;
+  }
+  100% {
+    margin-left: 1.1vw;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes navchange {
+  0% {
+    margin-left: 90vw;
+  }
+  100% {
+    margin-left: 1.1vw;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 header {
-  background: #ff8800;
+  background: #5707DB;
   padding: 1.1vh;
   width: 100%;
   color: white;
@@ -53,10 +132,13 @@ div div h1 {
 
 div div ul li {
   color: white;
-  font-size: 3vh;
+  font-size: 2vh;
 }
 
 @media (max-width: 480px) {
+  nav {
+    background-color: green;
+  }
   section header {
     width: 100vw;
     font-size: 5vh;
@@ -85,6 +167,10 @@ div div ul li {
             order: 1;
     background-color: #b133b1;
   }
+  section div ul li {
+    font-size: 3vh;
+    padding-bottom: 1.1vh;
+  }
   div div h1 {
     margin: 0;
   }
@@ -105,13 +191,22 @@ div div ul li {
     -ms-grid-rows: 50vh 50vh 50vh;
     -ms-grid-columns: 50vw 50vw;
         grid-template: 50vh 50vh 50vh/ 50vw 50vw;
+    grid-gap: 1.1vh;
   }
   section div img {
     height: 100%;
     width: 100%;
   }
+  section div ul {
+    text-align: left;
+    list-style-type: upper-roman;
+  }
+  section div ul li {
+    font-size: 3vh;
+    padding-bottom: 1.1vh;
+  }
   section div div {
-    background-color: rgba(177, 51, 177, 0.795);
+    background-color: #d330d3;
   }
   div div h1 {
     margin: 0;
