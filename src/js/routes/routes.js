@@ -27,7 +27,7 @@ function opencamera(){
 function mobilemenu() {
 var showmenu = document.getElementById("pop_out_menu");
  if(showmenu.style.display.block = true){
-  showmenu.setAttribute("style", "display: block;  position: absolute; margin-top: -40vh; margin-left: 5vw; height: 50vh; width: 50vw; background: #bbb;" )
+  showmenu.setAttribute("style", "display: block;  position: absolute; margin-top: -40vh; margin-left: 5vw; height: 50vh; width: 50vw; background-color: #F5440E;" )
   showmenu.appendChild(listitems);
 }
 }
@@ -47,8 +47,8 @@ aboutdevin.setAttribute("href", "../html/aboutme.html");
 completedpro.setAttribute("style", "display: block; position: absolute; top: 20vh;");
 completedpro.setAttribute("href", "../html/completeproj.html")
 homepage.setAttribute("href", "../index.html");
-homepage.setAttribute("style", "display: block; background-color: blue; top: 10vh; position: absolute; width: 100%;");
-listitems.setAttribute('style', "list-style: none; display: flex; flex-direction: column;");
+homepage.setAttribute("style", "display: block; top: 10vh; position: absolute; width: 100%;");
+listitems.setAttribute('style', "list-style: none; display: flex; flex-direction: column; ");
 listitems.appendChild(closebtn);
 listitems.appendChild(homepage);
 listitems.appendChild(completedpro);
@@ -56,5 +56,6 @@ listitems.appendChild(aboutdevin);
 
 
 function closemenu() {
-  document.getElementById("pop_out_menu").setAttribute("style", "display: none");
+  var closemenunow = document.getElementById("pop_out_menu")
+  closemenunow.setAttribute("style", "height: 0vh;");
 }

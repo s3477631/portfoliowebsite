@@ -48,14 +48,7 @@ setTimeout(function(){
         imagescaptured.push(cameraSensor.toDataURL("image/webp"));     
         console.log(imagescaptured)
          }, 2000);
-}, 2000)
-// cameraTrigger.onclick = function() {
-  
-// };
-
-//  showimage.onclick = function() {
-//      cameraoutput.src = imagescaptured[0]
-//  }
+}, 2000);
  var counter = 0;
 window.addEventListener('devicemotion', function(event){
     var motioned = event.acceleration.z;
