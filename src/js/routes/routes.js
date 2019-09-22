@@ -34,21 +34,26 @@ var showmenu = document.getElementById("pop_out_menu");
 const listitems = document.createElement("li");
 const closebtn = document.createElement("span");
 const homepage= document.createElement("a");
+const ruoklink = document.createElement("a");
 const completedpro = document.createElement("a");
 const aboutdevin = document.createElement("a");
 closebtn.innerText = "X";
 homepage.innerText = "Home";
 completedpro.innerText = "Completed Project";
 aboutdevin.innerText = "About Me";
+ruoklink.innerText = "R U OK"
 closebtn.setAttribute("style", "display: block; background-color: #00000000;");
-aboutdevin.setAttribute("style", "display: block; position: absolute; top: 30vh;");
+aboutdevin.setAttribute("style", "display: block; position: absolute; top: 35vh;");
 aboutdevin.setAttribute("href", "../html/aboutme.html");
-completedpro.setAttribute("style", "display: block; position: absolute; top: 20vh;");
+completedpro.setAttribute("style", "display: block; position: absolute; top: 25vh;");
 completedpro.setAttribute("href", "../html/completeproj.html")
 homepage.setAttribute("href", "../index.html");
-homepage.setAttribute("style", "display: block; top: 10vh; position: absolute; width: 100%;");
+homepage.setAttribute("style", "display: block; top: 15vh; position: absolute; width: 100%;");
+ruoklink.setAttribute('style', 'display: block; position: absolute; top: 5vh;');
+ruoklink.setAttribute('href', "../html/ruok.html")
 listitems.setAttribute('style', "list-style: none; display: flex; flex-direction: column;");
 listitems.appendChild(closebtn);
+listitems.appendChild(ruoklink);
 listitems.appendChild(homepage);
 listitems.appendChild(completedpro);
 listitems.appendChild(aboutdevin);
