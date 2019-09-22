@@ -2,7 +2,7 @@ div {
   display: -ms-grid;
   display: grid;
   grid: 50% 50vh/ 50vw 50vh;
-  background-color: rgba(219, 37, 255, 0.452);
+  background-color: rgba(92, 0, 110, 0.452);
 }
 
 div div {
@@ -12,7 +12,7 @@ div div {
 div div img {
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
-  border: 0.5rem dashed white;
+  border: 0.5rem dashed #070202;
   height: 100%;
   width: 100%;
 }
@@ -20,7 +20,7 @@ div div img {
 div div div {
   position: absolute;
   opacity: 0.75;
-  background: #353535;
+  background: #86db17;
   height: 7vh;
   width: 200%;
   z-index: 100;
@@ -33,7 +33,7 @@ div div div span {
   text-align: center;
   opacity: 1;
   font-size: 5vh;
-  color: white;
+  color: #580101;
   font-weight: bold;
 }
 
