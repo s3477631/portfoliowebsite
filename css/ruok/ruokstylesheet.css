@@ -87,8 +87,8 @@ body main div {
   margin: 2rem;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 40vh 20vh 10vh 10vh 20vh;
-      grid-template-rows: 40vh 20vh 10vh 10vh 20vh;
+  -ms-grid-rows: 40vh 10vh 10vh 10vh 20vh;
+      grid-template-rows: 40vh 10vh 10vh 10vh 20vh;
   grid-gap: 1.2rem;
   overflow: hidden;
 }
