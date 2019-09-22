@@ -19,7 +19,7 @@ github: https://github.com/s3477631/portfoliowebsite
 ## Tech Stack 
 vanilla javascript, scss and semantic html for maximum acccessibility opportunity.
 ### Home Page 
-![home screen desktop view](https://s3477631.github.io/portfoliowebsite/) 
+![home screen desktop view](https://github.com/s3477631/portfoliowebsite/blob/master/assets/homepage/homepage-lg.png) 
 > Desktop layout of home page.
   - Each image spins around on-hover or tap or mobile, it then navigates to an appropriate area of the site. 
   - certain bugs were left in for amusement purposes (events do not propagate from child span to parent div onhover). 
