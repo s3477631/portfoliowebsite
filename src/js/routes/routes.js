@@ -27,7 +27,8 @@ function opencamera(){
 function mobilemenu() {
 var showmenu = document.getElementById("pop_out_menu");
  if(showmenu.style.display.block = true){
-  showmenu.setAttribute("style", "display: block;  position: absolute; margin-top: -40vh; margin-left: 5vw; height: 50vh; width: 50vw; background-color: #F5440E;" )
+  showmenu.setAttribute("style",
+   "display: block; animation-name: testcase; animation-duration: 2s; position: absolute; margin-top: -40vh; margin-left: 5vw; height: 50vh; width: 50vw; background-color: #F5440E;" )
   showmenu.appendChild(listitems);
 }
 }

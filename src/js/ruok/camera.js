@@ -1,7 +1,3 @@
-
-
-
-
 let constrainObj = {
     audio: false, 
     video: {
@@ -32,7 +28,7 @@ const imageoutput = document.createElement("img");
 const filterimage = document.createElement("img"); 
 filterimage.setAttribute("src", '../assets/working_project/ruok/filter.png')
 const cameraSensor = document.createElement("canvas")
-        cameraSensor.setAttribute("id", "canvas");
+cameraSensor.setAttribute("id", "canvas");
 const fontlayer = cameraSensor.getContext("2d");
 fontlayer.font= "100px Arial;"
 const imagescaptured = []
@@ -78,13 +74,10 @@ window.addEventListener('devicemotion', function(event){
         }
 
     }
-
-  
   });
 
   function doSomething(scroll_pos){
     //   cameraoutput.src = imagescaptured[scroll_pos]
- 
     console.log(scroll_pos);
   }
   
