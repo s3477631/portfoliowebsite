@@ -43,8 +43,6 @@ setTimeout(function(){
         cameraSensor.width = cameraView.videoWidth;
         cameraSensor.height = cameraView.videoHeight;
         cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
-        cameraSensor.getContext("2d").drawImage(filterimage, 0, 0);
-        fontlayer.fillText("Hello World", 30, 30);
         imagescaptured.push(cameraSensor.toDataURL("image/webp"));     
         console.log(imagescaptured)
          }, 2000);
